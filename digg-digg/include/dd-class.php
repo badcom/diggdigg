@@ -276,7 +276,7 @@ class DD_Twitter extends BaseDD{
 	const OPTION_LAZY_LOAD = "dd_twitter_lazy_load";
 	
 	const BASEURL_LAZY ="<div class='dd-twitter-ajax-load dd-twitter-POST_ID'></div><a href=\"http://twitter.com/share\" class=\"twitter-share-button\" data-url=\"VOTE_URL\" data-count=\"VOTE_BUTTON_DESIGN\" data-text=\"VOTE_TITLE\" data-via=\"VOTE_SOURCE\" ></a>";
-	const BASEURL_LAZY_SCRIPT = " function loadTwitter_POST_ID(){ jQuery(document).ready(function(\$) { \$('.dd-twitter-POST_ID').remove();\$.getScript('http://platform.twitter.com/widgets.js'); }); }";
+	const BASEURL_LAZY_SCRIPT = " function loadTwitter_POST_ID(){ jQuery(document).ready(function(\$) { \$('.dd-twitter-POST_ID').remove();\$.getScript('//platform.twitter.com/widgets.js'); }); }";
 	const SCHEDULER_LAZY_SCRIPT = "window.setTimeout('loadTwitter_POST_ID()',SCHEDULER_TIMER);";
 	const SCHEDULER_LAZY_TIMER = "1000";
 
@@ -694,7 +694,7 @@ class DD_Linkedin extends BaseDD{
 	
 	const BASEURL = "<script src='//platform.linkedin.com/in.js' type='text/javascript'></script><script type='IN/Share' data-url='VOTE_URL' data-counter='VOTE_BUTTON_DESIGN'></script>";
 	const BASEURL_LAZY = "<div class='dd-linkedin-ajax-load dd-linkedin-POST_ID'></div><script type='IN/share' data-url='VOTE_URL' data-counter='VOTE_BUTTON_DESIGN'></script>";
-	const BASEURL_LAZY_SCRIPT = " function loadLinkedin_POST_ID(){ jQuery(document).ready(function(\$) { \$('.dd-linkedin-POST_ID').remove();\$.getScript('http://platform.linkedin.com/in.js'); }); }";
+	const BASEURL_LAZY_SCRIPT = " function loadLinkedin_POST_ID(){ jQuery(document).ready(function(\$) { \$('.dd-linkedin-POST_ID').remove();\$.getScript('//platform.linkedin.com/in.js'); }); }";
 	const SCHEDULER_LAZY_SCRIPT = "window.setTimeout('loadLinkedin_POST_ID()',SCHEDULER_TIMER);";
 	const SCHEDULER_LAZY_TIMER = "1000";
     
@@ -919,9 +919,9 @@ class DD_Flattr extends BaseDD{
 	const URL_API = "http://developers.flattr.net/button/";
 	const DEFAULT_BUTTON_WEIGHT = "10";
 
-	const BASEURL = '<script src="http://api.flattr.com/js/0.6/load.js?mode=auto"></script><a class="FlattrButton" href="VOTE_URL" style="display:none;" title="VOTE_TITLE" data-flattr-uid="VOTE_FLATTR_UID" data-flattr-button="VOTE_BUTTON_DESIGN" data-flattr-category="text"></a>';
+	const BASEURL = '<script src="//api.flattr.com/js/0.6/load.js?mode=auto"></script><a class="FlattrButton" href="VOTE_URL" style="display:none;" title="VOTE_TITLE" data-flattr-uid="VOTE_FLATTR_UID" data-flattr-button="VOTE_BUTTON_DESIGN" data-flattr-category="text"></a>';
 	const BASEURL_LAZY = '<a class="FlattrButton" href="VOTE_URL" style="display:none;" title="VOTE_TITLE" data-flattr-uid="VOTE_FLATTR_UID" data-flattr-button="VOTE_BUTTON_DESIGN" data-flattr-category="text"></a>';
-	const BASEURL_LAZY_SCRIPT = "function loadFlattr_POST_ID(){ jQuery(document).ready(function(\$) { \$.getScript('http://api.flattr.com/js/0.6/load.js?mode=auto'); }); }";
+	const BASEURL_LAZY_SCRIPT = "function loadFlattr_POST_ID(){ jQuery(document).ready(function(\$) { \$.getScript('//api.flattr.com/js/0.6/load.js?mode=auto'); }); }";
 	const SCHEDULER_LAZY_SCRIPT = "window.setTimeout('loadFlattr_POST_ID()',SCHEDULER_TIMER);";
 	const SCHEDULER_LAZY_TIMER = "1000";
 
@@ -1688,7 +1688,7 @@ class DD_YBuzz extends BaseDD{
 	const URL_API = "http://buzz.yahoo.com/buttons";
 	const DEFAULT_BUTTON_WEIGHT = "90";
 	
-	const BASEURL = "<script type='text/javascript'>yahooBuzzArticleHeadline=\"VOTE_TITLE\";yahooBuzzArticleId=\"VOTE_URL\";</script><script type='text/javascript' src='http://d.yimg.com/ds/badge2.js' badgetype='VOTE_BUTTON_DESIGN'></script>";
+	const BASEURL = "<script type='text/javascript'>yahooBuzzArticleHeadline=\"VOTE_TITLE\";yahooBuzzArticleId=\"VOTE_URL\";</script><script type='text/javascript' src='//d.yimg.com/ds/badge2.js' badgetype='VOTE_BUTTON_DESIGN'></script>";
 	
 	const OPTION_APPEND_TYPE = "dd_ybuzz_appendType";
 	const OPTION_BUTTON_DESIGN = "dd_ybuzz_buttonDesign";
@@ -2243,7 +2243,7 @@ class DD_Tumblr extends BaseDD{
 	const OPTION_LAZY_LOAD = "dd_tumblr_lazy_load";
 	
 	const BASEURL_LAZY ='<div class="dd-tumblrajax-load dd-tumblr-POST_ID"></div><a href="http://www.tumblr.com/share?link=VOTE_URL" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:61px; height:20px; background:url(\'http://platform.tumblr.com/v1/share_2.png\') top left no-repeat transparent;">Share on Tumblr</a>';
-	const BASEURL_LAZY_SCRIPT = " function loadTumblr_POST_ID(){ jQuery(document).ready(function(\$) { \$('.dd-pocket-POST_ID').remove();\$.getScript('http://platform.tumblr.com/v1/share.js'); }); }";
+	const BASEURL_LAZY_SCRIPT = " function loadTumblr_POST_ID(){ jQuery(document).ready(function(\$) { \$('.dd-pocket-POST_ID').remove();\$.getScript('//platform.tumblr.com/v1/share.js'); }); }";
 	const SCHEDULER_LAZY_SCRIPT = "window.setTimeout('loadTumblr_POST_ID()',SCHEDULER_TIMER);";
 	const SCHEDULER_LAZY_TIMER = "1000";
 
